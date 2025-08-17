@@ -4,7 +4,10 @@ This is the official website for **Automate**, built with **Next.js** and **Mate
 We help businesses streamline workflows using **n8n, Make.com, Zapier, and other no-code/low-code tools**.
 
 ## 🌍 Deployed URL
-- [https://automate-pi.vercel.app/](https://automate-pi.vercel.app/)
+[https://automate-pi.vercel.app/](https://automate-pi.vercel.app/)
+
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge&logo=vercel)](https://automate-pi.vercel.app/)
+
 
 
 ## 🚀 Features

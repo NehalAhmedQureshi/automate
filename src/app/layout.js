@@ -35,7 +35,7 @@ export const metadata = {
     title: "Automate | Workflow Automation with n8n, Make & Zapier",
     description:
       "Automate your business with powerful workflow automation using n8n, Make (Integromat), and Zapier. Streamline processes, reduce manual work, and scale faster.",
-    url: "https://yourdomain.com",
+    url: "https://automate-pi.vercel.app/",
     siteName: "Automate",
     images: [
       {
