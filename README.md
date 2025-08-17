@@ -3,6 +3,10 @@
 This is the official website for **Automate**, built with **Next.js** and **Material UI (MUI)**.  
 We help businesses streamline workflows using **n8n, Make.com, Zapier, and other no-code/low-code tools**.
 
+## 🌍 Deployed URL
+- [https://automate-pi.vercel.app/](https://automate-pi.vercel.app/)
+
+
 ## 🚀 Features
 - Modern single-page design with Next.js 15  
 - Material UI components for clean, responsive UI  
@@ -31,3 +35,4 @@ npm install
 
 # Run development server
 npm run dev
+
