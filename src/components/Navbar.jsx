@@ -1,5 +1,6 @@
 "use client";
 import { logo } from "@/assets";
+import { navLinks } from "@/constants/Link";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,39 +20,37 @@ export default function Navbar() {
       px={3}
       borderRadius={5}
       position={"sticky"}
-      top={16}
+      top={14}
+      zIndex={1000}
     >
-      <Link href={"/"}>
+      <Link href={"/"} style={{display:'flex',justifyContent:'center'}}>
         <Image
           src={logo}
           width={0}
           height={0}
-          style={{ width: "150px", height: "auto", cursor: "pointer" }}
+          style={{ width: "150px", height: "auto", cursor: "pointer",}}
         />
       </Link>
       <Stack direction={"row"} justifyContent={"space-between"} gap={4}>
-        {[
-          { text: "Home", link: "/" },
-          { text: "Services", link: "/services" },
-        ].map((data, index) => (
+        {navLinks?.map((data, index) => (
           <Typography
             variant="body1"
             component={Link}
-            color={pathname === data?.link ? "blue" : "black"}
+            color={pathname === data?.link ? "#1976d2" : "black"}
             key={index}
-            href={data?.link}
+            href={data?.link || "/"}
             className="link"
             sx={{
               textDecoration: "none",
               fontWeight: pathname === data.link ? "bold" : "normal",
-              borderBottom: pathname === data.link ? "2px solid blue" : "none", // optional underline
+              borderBottom: pathname === data.link ? "2px solid #1976d2" : "none", // optional underline
               transition: "all 0.3s ease",
               "&:hover": {
                 color: "blue",
               },
             }}
           >
-            {data?.text || "test"}
+            {data?.text || "Empty"}
           </Typography>
         ))}
       </Stack>
